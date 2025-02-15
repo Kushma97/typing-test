@@ -56,10 +56,10 @@ submit = ''
 
 
 #Loading assets like fonts, sounds, music effects
-footer_font= pygame.font.Font("assets/Square.ttf", 35) # Font("path", font_size)
-pause_font = pygame.font.Font("assets/1up.ttf", 30)
-banner_font = pygame.font.Font("assets/1up.ttf", 20)
-font = pygame.font.Font("assets/AldotheApache.ttf", 40)
+footer_font= pygame.font.Font("fontsType/Square.ttf", 35) # Font("path", font_size)
+pause_font = pygame.font.Font("fontsType/1up.ttf", 30)
+banner_font = pygame.font.Font("fontsType/1up.ttf", 20)
+font = pygame.font.Font("fontsType/AldotheApache.ttf", 40)
 
 def generateLevel():
   word_objs = []
