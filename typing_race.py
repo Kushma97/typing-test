@@ -1,7 +1,3 @@
-#  pygame.draw.rect(windos_surface_obj, red_color, (x_startingpos, y_startingpos, width, height), broder_thickness)
-#(x1, y1, x2, y2) are the positions of 4 corners of a rectangle
-# blit() is used to draw one surface onto another
-
 import pygame
 import random
 import copy
@@ -53,7 +49,6 @@ for i in range(26):
   letter = chr(97 + i)  # chr converts ASCII to character
   letters.append(letter)
 submit = ''
-
 
 #Loading assets like fonts, sounds, music effects
 footer_font= pygame.font.Font("fontsType/Square.ttf", 35) # Font("path", font_size)
