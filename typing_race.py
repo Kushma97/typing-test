@@ -120,7 +120,6 @@ def checkAnswer(scor):
       points = wrd.speed * len(wrd.text) * 10 * (len(wrd.text)/3) #Just for fun our own maths for points
       scor += int(points) #removing decimals
       word_objects.remove(wrd)
-      #Playing successful entry sound effects
 
   return scor
 
@@ -132,6 +131,7 @@ def draw_screen():
   pygame.draw.line(screen, 'white', (550, HEIGHT-70), (550, HEIGHT), 2) # Another vertical line
   pygame.draw.line(screen, 'white', (0, HEIGHT-70), (WIDTH, HEIGHT-70), 2) #HOrizontal LiNE
   pygame.draw.rect(screen, 'black', (0, 0, WIDTH, HEIGHT), 2)  #Black rectangular Border 
+
 # Text for showing the current level, player's current input, high scores, scores, lives, pause
   text = footer_font.render(f"Level:{level}", True, 'white')
   screen.blit(text, (10, HEIGHT-57))
@@ -179,7 +179,7 @@ class Button:
     self.text = text
     self.clicked = clicked
   def drawCircles(self):
-    cir = pygame.draw.circle(self.surf, (45, 89, 135), (self.xPos, self.yPos), 24) # 35 is the radius of the circle
+    cir = pygame.draw.circle(self.surf, (45, 89, 135), (self.xPos, self.yPos), 24) # 24 is the radius of the circle
     if cir.collidepoint(pygame.mouse.get_pos()):
       butns =  pygame.mouse.get_pressed()
       if butns[0]: #If button is clicked not just hovered by mouse, changing the color
