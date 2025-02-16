@@ -1,6 +1,3 @@
-#  pygame.draw.rect(windos_surface_obj, red_color, (x_startingpos, y_startingpos, width, height), broder_thickness)
-#(x1, y1, x2, y2) are the positions of 4 corners of a rectangle
-# blit() is used to draw one surface onto another
 
 import pygame
 import random
@@ -23,15 +20,13 @@ for i in range(len(wordlist)):
         len_indexes.append(i)
 len_indexes.append(len(wordlist))
 
-# print(len_indexes)
-
 # Setting up the game window
 WIDTH, HEIGHT = 640, 480
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Typing test game")
 
 timer = pygame.time.Clock()
-fps = 60  # Frames per second
+fps = 60  
 
 #Game variables
 level = 1
@@ -120,7 +115,7 @@ def checkAnswer(scor):
       points = wrd.speed * len(wrd.text) * 10 * (len(wrd.text)/3) #Just for fun our own maths for points
       scor += int(points) #removing decimals
       word_objects.remove(wrd)
-      #Playing successful entry sound effects
+     
 
   return scor
 
