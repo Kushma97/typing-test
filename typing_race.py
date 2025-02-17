@@ -163,6 +163,8 @@ class Word:
     active_len = len(activeString) #Length of activeString
     if activeString == self.text[:active_len]:
       screen.blit(font.render(activeString, True, 'green'),(self.x_pos, self.y_pos))
+    else:
+      screen.blit(font.render(activeString, True, 'red'),(self.x_pos, self.y_pos))
   def update(self):
     self.x_pos -= self.speed
     
